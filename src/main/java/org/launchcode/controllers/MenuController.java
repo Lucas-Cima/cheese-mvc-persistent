@@ -49,7 +49,7 @@ public class MenuController {
 
         if (errors.hasErrors()) {
             model.addAttribute("title", "Add a Menu");
-            return "menu/add"; //Re-doing new Menu() is unnecessary
+            return "menu/add";
         } else {
             menuDao.save(menu);
         }
